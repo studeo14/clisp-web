@@ -5,7 +5,8 @@
   :depends-on ("snooze" "clack" "djula")
   :components ((:module "src"
                 :components
-                ((:file "main"))))
+                ((:file "main" :depends-on ("datum"))
+                 (:file "datum"))))
   :description ""
   :in-order-to ((test-op (test-op "htmx/tests"))))
 
